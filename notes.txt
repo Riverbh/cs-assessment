@@ -1,0 +1,31 @@
+-The insert function is 705.772 ms 
+and the append 1.556583 ms when the 
+extraLargeArray is passed through them.
+-Append is faster
+
+
+-The insert function is 17.625 hs
+and the append 54.25 hs when the 
+tinyArray is passed through them
+-Inser was faster
+
+
+-The insert function is 26.375 hs 
+and the append 61.417 hs when the 
+smallArray is passed through them
+-Insert was faster 
+
+
+-The insert function is 135.625 hs 
+and the append 88.459 hs when the 
+mediumArray is passed through them
+-Append was faster
+
+
+-The insert function is 6.951958 ms
+and the append 491.417 hs when the 
+largeArray is passed through them
+-Append was faster
+
+
+As you can see the doubleInsert function timing is faster then the the doubleAppend function when the arrays where small, but as the arrays got bigger the doubleAppend function became significantly faster then the doubleInsert. This is because the .unshift method adds a new element to the beginning of the array as with the .push method add a new element to the end of the array. This means when you add a new element to the beginning using .unshift it will have to go through the whole array resigning every element to a new index, so the longer the array the longer time it takes to run. But when you add an element to the end of the array using .push mehtod it will only need to add a new index rather then shift all the indexes down. 
